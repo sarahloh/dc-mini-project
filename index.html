@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard - Mini Project</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script type="text/javascript" src="assets/js/d3.min.js"></script>
+    <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="assets/js/dc.min.js"></script>
+    <script type="text/javascript" src="assets/js/queue.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/js/graph.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Gender In Academia</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <section class="percentage-section">
+            <div class="row">
+                <div class="col-md-5 text-right">
+                    <h2>Percentage Prof Women</h2>
+                    <p>Less than half of female academics are professors.</p>
+                    <div class="number-box number-box-female" id="percentage-of-women-professors">
+                        <i class="fas fa-female"></i>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center discipline-selector-container">
+                    <h3>Discipline Selector</h3>
+                    <span id="discipline-selector"></span>
+                </div>
+                <div class="col-md-5">
+                    <h2>Percentage Prof Men</h2>
+                    <p>The majority of male academics are at professor level.</p>
+                    <div class="number-box" id="percentage-of-men-professors">
+                        <i class="fas fa-male"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Gender Balance</h2>
+                    <p>Men outnumber women 10 to 1.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Average Salary</h2>
+                    <p>Men earn on average 10% more than women.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Rank Distribution</h2>
+                    <p>Distribution of ranks is weighted towards the upper level for men.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="gender-balance"></div>
+                </div>
+                <div class="col-md-4">
+                    <div id="average-salary"></div>
+                </div>
+                <div class="col-md-4">
+                    <div id="rank-distribution"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <h2>Service Salary Correlation</h2>
+                    <p>There appears to be little or no correlation between salary and years of service.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <div id="service-salary"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <h2>PhD Salary Correlation</h2>
+                    <p>There is a very loose correlation between salary and years since receiving a PhD.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <div id="phd-salary"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- /.container-fluid-->
+
+</body>
+
+</html>

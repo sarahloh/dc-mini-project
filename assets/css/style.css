@@ -1,0 +1,25 @@
+section {
+    padding: 40px 10px;
+    border-bottom: 3px solid #dddddd;
+}
+
+.number-box {
+    font-size: 64px;
+    text-align: center;
+    line-height: normal;
+}
+
+.number-box-female {
+    float: right !important;   
+}
+
+.percentage-section .col-md-5 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.discipline-selector-container {
+    height: 178px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
